@@ -11,16 +11,21 @@
         padding: 10px;
         border-radius: 8px;
       }
+      form {
+        background-color: aquamarine;
+      }
     </style>
   </head>
   <body>
-    <label for="city">What is the time in?</label>
-    <select id="city">
-      <option value="">Select a city</option>
-      <option value="paris">Paris</option>
-      <option value="tokyo">Tokyo</option>
-      <option value="sydney">Sydney</option>
-    </select>
+    <form action="city">
+      <label for="city">What is the time in?</label>
+      <select id="city">
+        <option value="">Select a city</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="sydney">Sydney</option>
+      </select>
+    </form>
     <script>
       function showDate(event) {
         if (event.target.value.length > 0) {
